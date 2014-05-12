@@ -1,0 +1,157 @@
+\documentclass[12pt,letterpaper,fleqn]{article}
+\usepackage{graphicx}
+\usepackage{lineno}
+\usepackage{hyperref}
+\usepackage{subfigure}
+\usepackage{cite}
+\usepackage{xcolor,colortbl}
+\usepackage{wrapfig}
+\usepackage{enumitem} %%% uncommenting this line and associated
+%% options only saves about 1/4 page
+% enumitem options
+%\setlist{nosep}
+%\setitemize{wide}
+%\setlist[itemize]{leftmargin=*}
+%\setlist[enumerate]{leftmargin=*}
+
+
+\definecolor{Gray}{gray}{0.85}
+
+\textwidth      6.65 in
+\textheight     9.0 in
+\topmargin      0.5 in
+\oddsidemargin  0.0 in
+\evensidemargin 0.0 in
+\headheight =  -1.0 in  
+
+
+\begin{document}
+\linenumbers
+
+\section{Foo}
+\label{sec:intro}
+
+HEP computing is facing many challenges ahead, including the High
+Luminosity LHC program in Europe, the Intensity Frontier (IF) program
+in the US and the evolution of computing hardware technology. In
+this document we describe a proposal for an HEP Software Consortium
+(HSC) whose aim is to foster the development of a high quality,
+innovative, efficient and sustainable software ecosystem of general
+utility for the HEP community.
+
+Significant resources are required to maintain and further develop
+the scientific computing infrastructure needed by the current and
+future HEP programs.  Data analysis campaigns last for many years
+(decades!) and involve hundreds of developers and experimenters.
+The data volumes and processing needs for the LHC continue to
+increase (maybe a qualitative number here?) while the many IF
+experiments will be in various phases of design and operations in
+the next decade.  In addition, the evolution of the technical
+landscape calls for major software re-engineering.  Because the
+overall HEP funding has been declining in the past few years, it
+will be difficult to sustain the necessary effort without increasing
+the efficiency of our software development model.   Thus, it is
+desirable to evolve this model to take advantage of commonality in
+needs of experiments and leverage expertise across all programs and
+projects.
+
+In order to facilitate this evolution of our software development model, we propose to form a consortium of HEP software projects whose purpose will be to establish a framework for collaboration on specific software aspects, an ecosystem of software activities in which new ideas could be formed and communicated, and technology transitions could be facilitated.  This HEP Software Consortium (HSC) would aim for identifying areas that benefit from collaboration between individual projects and for facilitating the sharing/pooling of expertise and resources to solve common problems.  It will organize forums to discuss best practice and software development issues and propose better software engineering solutions.  Eventually, the HSC could evolve to also incorporate an HSC centric project.  Because many of our tools have broader applicability for science outside HEP, the existence of such a project could help generate new funding opportunities outside our traditional funding “sandbox” (funding agencies with narrow HEP focus) by increasing the visibility and appeal of our scientific software activities.
+
+There is a plethora of mature and successful HEP software projects,
+each with different models of organization, established process,
+program, and sponsors.  The HSC will provide an effective mechanism
+for these projects to connect and collaborate, while maintaining
+their separate and independent entities.  We envision the HSC as a
+partnership of projects, which explores the common needs and interests
+of the participants, identifies community goals and deliverables,
+and facilitates community contributions. Consortium participants
+will come initially from HEP scientific software projects (e.g.
+Root, Geant4, GENIE, etc), HEP experiments, and university and
+laboratory scientific software and computer science groups.  In the
+future, if the HSC enables and fosters outreach to other communities
+beyond HEP, participation could be expanded to similar groups from
+non-HEP domains.
+
+The Consortium will involve all partners in the design, development
+and possibly deployment process to ensure that the HSC will function
+and evolve consistently while meeting the needs of the individual
+partners.  The Consortium will sponsor activities (workshops,
+meetings, discussion forums) to facilitate the development of
+software engineering standards and software architecture guidelines
+by identifying common needs and encouraging common solutions. The
+participating institutions and partner projects will contribute to
+the Consortium by providing input and expertise in defining common
+goals and developing such principles and guidelines.  In addition,
+they will contribute to the HSC software infrastructure by developing
+and deploying software within the common development and testing
+guidelines and following the HSC software architecture principles.
+This will include adapting existing software tools to the HSC
+standards, when possible.  The partner projects will maintain their
+independent organization frameworks and have ownership of the
+software they are developing and deploying utilizing the common
+standards.  The HSC will publish the code that complies with the
+standards and organize peer-reviews for the software that is developed
+under its process and guidelines.  More specifically, the scope of
+the HSC work will be to
+\begin{itemize}
+\item provide technical expertise in architecture and design issues,
+\item propose standards for component interfaces and layout, to enable independent development and easy component integration, 
+\item facilitate the development of non-domain specific components (geometry representation, data representation, …) that can be used by many projects,
+\item develop standards and guidelines for testing releasing and documenting software, and
+\item propose solutions for distributed collaborative environment and common infrastructure such as build tools, testing and validation suites
+\end{itemize}
+
+In order for this program of work to be successful, the Consortium
+will adopt an “open-source” software model and rely on agile
+development methods.  The organization framework of the Consortium
+will include Technical Domain Forums each with responsibility in a
+technical domain such as simulation, analytics, frameworks, and
+crosscutting R\&D activities (the concurrency forum is a good example).
+The Forums will facilitate the organization of workshops and meetings,
+document and distribute the findings (wikis, blogs, etc).   A
+possible organization chart for the Consortium is shown below
+
+Is a picture necessary?
+
+Role Definitions
+
+Advisory Board: consists of representatives from the user community
+(HEP experiments, non-HEP in future), partner projects, and software
+industry.  The role of the Advisory Board is to provide feedback
+and recommendations on scientific and technical priorities.
+
+Steering Council: consists of representatives of participating
+institutions and projects.  The role of the council is to identify
+common areas of interest and discuss common goals and overall
+direction of the HSC in the best interest of the Consortium.
+
+Software Engineering Board: software experts with expertise covering
+all project domain areas. The participating institutions and partner
+projects contribute the members of this board.  Provide expertise
+and advise on software architecture and engineering, contribute to
+peer-reviews, discuss and propose best practices and guidelines.
+The members of the board play a leading role in the activities of
+the Technical Domain Forums.
+
+Technical Domain Forums: provide coordination and facilitate
+communication between the participating projects and the consortium.
+Organize workshops; maintain wikis, blogs, etc.
+
+
+Summary, if needed???
+
+A HEP Software Consortium will provide the means to leverage and coordinate HEP ongoing software activities.  The proposed HSC will
+\begin{itemize}
+\item your favorite bullets,
+\item provide the means to recognize and encourage the common aspects of successful projects, facilitate collaboration between partner projects, and facilitate adoption of successful software engineering practices,
+\item eventually enable contact with other scientific fields, providing access to either resources or software tools and expertise
+\end{itemize}
+
+
+
+\newpage
+
+%\bibliographystyle{unsrt}
+%\bibliography{hsc2014}
+
+\end{document}
