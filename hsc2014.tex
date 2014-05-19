@@ -24,12 +24,17 @@
 \evensidemargin 0.0 in
 \headheight =  -1.0 in  
 
+\author{Lothar Bauerdick, Paolo Calafiura, Peter Elmer, Torre Wenaus, Liz Sexton, \\
+Panagiotis Spentzouris, Avi Yagil}
+\title{ HEP Software Consortium}
 
 \begin{document}
+\maketitle
 \linenumbers
 
-\section{Introduction}
-\label{sec:intro}
+\section{HEP Software Challenges}
+\label{sec:challenges}
+
 
 HEP computing is facing many challenges ahead, including the High
 Luminosity LHC program in Europe, the Intensity Frontier (IF) program
@@ -44,7 +49,7 @@ the scientific computing infrastructure needed by the current and
 future HEP programs.  Data analysis campaigns last for many years
 (decades!) and involve hundreds of developers and experimenters.
 The data volumes and processing needs for the LHC continue to
-increase (maybe a qualitative number here?) while the many IF
+increase  while the many IF
 experiments will be in various phases of design and operations in
 the next decade.  In addition, the evolution of the technical
 landscape calls for major software re-engineering.  Because the
@@ -55,10 +60,13 @@ desirable to evolve this model to take advantage of commonality in
 needs of experiments and leverage expertise across all programs and
 projects.
 
+\section{Software Consortium}
+\label{sec:consortium}
+
 In order to facilitate this evolution of our software development
 model, we propose to form a consortium of HEP software projects
 whose purpose will be to establish a framework for collaboration
-on specific software aspects, an ecosystem of software activities
+on specific software aspects, an {\it ecosystem} of software activities
 in which new ideas could be formed and communicated, and technology
 transitions could be facilitated.  This HEP Software Consortium
 (HSC) would aim for identifying areas that benefit from collaboration
@@ -130,49 +138,56 @@ will include Technical Domain Forums each with responsibility in a
 technical domain such as simulation, analytics, frameworks, and
 crosscutting R\&D activities (the concurrency forum is a good example).
 The Forums will facilitate the organization of workshops and meetings,
-document and distribute the findings (wikis, blogs, etc).   A
-possible organization chart for the Consortium is shown below
+document and distribute the findings (wikis, blogs, etc).   
 
-Is a picture necessary?
 
-\section{Role Definitions}
+\section{Governance}
+\label{sec:governance}
 
 Advisory Board: consists of representatives from the user community
-(HEP experiments, non-HEP in future), partner projects, and software
-industry.  The role of the Advisory Board is to provide feedback
-and recommendations on scientific and technical priorities.
+(HEP experiments, non-HEP in future) and projects, and software
+industry experts.  The role of the Advisory Board is to provide feedback
+and recommendations on scientific and technical priorities and needs.  The membership of the
+Board is solicited by the Consortium Council.
 
-Steering Council: consists of representatives of participating
-institutions and projects.  The role of the council is to identify
-common areas of interest and discuss common goals and overall
-direction of the HSC in the best interest of the Consortium.
 
-Software Engineering Board: software experts with expertise covering
-all project domain areas. The participating institutions and partner
-projects contribute the members of this board.  Provide expertise
-and advise on software architecture and engineering, contribute to
-peer-reviews, discuss and propose best practices and guidelines.
+Software Engineering Board: consistes of software experts with expertise covering
+all project domain areas. The participating experiments and partner
+projects contribute the members of this board.  The members of the Board elect a fixed term chair to moderate discussions and foster concensus. The Board provides expertise
+and advise on software architecture and engineering issues, organizes and contributes to
+peer-reviews, discusses and proposes best practices and provides guidelines.
 The members of the board play a leading role in the activities of
-the Technical Domain Forums.
+the Technical Domain Forums by organizing and chairing the Forum discussions and meetings, and  discussing the outcome
+of the Forum activities at the Board meetings.  Essentially, the activities of the Board provide the "ecosystem" functionality of the Consortium.  
 
 Technical Domain Forums: provide coordination and facilitate
 communication between the participating projects and the consortium.
 Organize workshops; maintain wikis, blogs, etc.
 
+Consortium Council: consists of representatives of participating
+institutions, projects, and experiments; the stakeholders board.  The role of the council is to enable the work of the Software Engineering Board.  The Council holds infrequent meetings (at least once a year) to 
+identify common areas of interest and discuss common goals and overall
+direction based on the input from the Advisory Board and the results of the activities of the Software Engineering Board.
+
+
+
 
 \section{Summary} 
-if needed???
+
 
 A HEP Software Consortium will provide the means to leverage and
-coordinate HEP ongoing software activities.  The proposed HSC will:
+coordinate HEP ongoing software activities and facilitate the creation of an {\it ecosystem} of
+software acticities.   The proposed HSC will:
 \begin{itemize}
-\item your favorite bullets,
+
 \item provide the means to recognize and encourage the common aspects
 of successful projects, facilitate collaboration between partner
 projects, and facilitate adoption of successful software engineering
 practices,
-\item eventually enable contact with other scientific fields,
-providing access to either resources or software tools and expertise
+\item provide software architecture assistance and expertise,
+\item help coordinate exploration of new technologies and provide expertise in their implementation,
+\item and eventually enable contact with other scientific fields,
+providing access to either resources or software tools and expertise.
 \end{itemize}
 
 
