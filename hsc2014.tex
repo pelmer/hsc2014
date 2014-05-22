@@ -24,60 +24,65 @@
 \evensidemargin 0.0 in
 \headheight =  -1.0 in  
 
-\author{Lothar Bauerdick, Paolo Calafiura, Peter Elmer, Torre Wenaus, Liz Sexton, \\
-Panagiotis Spentzouris, Avi Yagil}
-\title{ HEP Software Consortium}
+\author{Lothar Bauerdick, Paolo Calafiura, Peter Elmer, Liz Sexton, \\
+Panagiotis Spentzouris, Torre Wenaus, Avi Yagil}
+\title{HEP Software Consortium}
 
 \begin{document}
 \maketitle
 \linenumbers
 
-\section{HEP Software Challenges}
-\label{sec:challenges}
+\section{Objective}
+\label{sec:objective}
 
 
 HEP computing is facing many challenges ahead, including the High
 Luminosity LHC program in Europe, the Intensity Frontier (IF) program
-in the US and the evolution of computing hardware technology. In
-this document we describe a proposal for an HEP Software Consortium
-(HSC) whose aim is to foster the development of a high quality,
-innovative, efficient and sustainable software ecosystem of general
-utility for the HEP community.
-
+in the US and the evolution of computing hardware technology.
 Significant resources are required to maintain and further develop
 the scientific computing infrastructure needed by the current and
 future HEP programs.  Data analysis campaigns last for many years
-(decades!) and involve hundreds of developers and experimenters.
+(decades!)\ and involve hundreds of developers and experimenters.
 The data volumes and processing needs for the LHC continue to
 increase  while the many IF
 experiments will be in various phases of design and operations in
 the next decade.  In addition, the evolution of the technical
-landscape calls for major software re-engineering.  Because the
-overall HEP funding has been declining in the past few years, it
-will be difficult to sustain the necessary effort without increasing
-the efficiency of our software development model.   Thus, it is
-desirable to evolve this model to take advantage of commonality in
+landscape calls for major software re-engineering. Both the
+physics and the technology {\em require more sophisticated software
+tools}.
+
+At the same time, overall HEP funding has been declining in the past
+few years. Multiple independent efforts to build this software
+will prove both more costly and ultimately produce less
+sophisticated and less sustainable software. It is thus
+desirable to take advantage of commonality in
 needs of experiments and leverage expertise across all programs and
-projects.
+projects. While some organizational structures exist within individual
+labs, between experiments at a given lab or in specific softwaee domains,
+no general framework exists for collaborative software efforts across the entire HEP field.
+
+In this document we describe a proposal for an HEP Software Consortium
+(HSC) whose aim is to {\em foster the development of a high quality,
+innovative, efficient and sustainable software ecosystem of general
+utility for the HEP community.}
+
+
+
+
 
 \section{Software Consortium}
 \label{sec:consortium}
 
-In order to facilitate this evolution of our software development
-model, we propose to form a consortium of HEP software projects
-whose purpose will be to establish a framework for collaboration
-on specific software aspects, an {\it ecosystem} of software activities
-in which new ideas could be formed and communicated, and technology
-transitions could be facilitated.  This HEP Software Consortium
-(HSC) would aim for identifying areas that benefit from collaboration
-between individual projects and for facilitating the sharing/pooling
+This HEP Software Consortium
+(HSC) would aim to identify areas that benefit from collaboration
+between individual projects and to facilitate the sharing/pooling
 of expertise and resources to solve common problems.  It will
 organize forums to discuss best practice and software development
-issues and propose better software engineering solutions.  Eventually,
-the HSC could evolve to also incorporate an HSC centric project.
+issues and propose better software engineering solutions. 
+%Eventually, the HSC could evolve to also incorporate an HSC centric project.
 Because many of our tools have broader applicability for science
 outside HEP, the existence of such a project could help generate
-new funding opportunities outside our traditional funding “sandbox”
+new funding opportunities outside our traditional funding ``sandbox''
 (funding agencies with narrow HEP focus) by increasing the visibility
 and appeal of our scientific software activities.
 
@@ -110,83 +115,141 @@ they will contribute to the HSC software infrastructure by developing
 and deploying software within the common development and testing
 guidelines and following the HSC software architecture principles.
 This will include adapting existing software tools to the HSC
-standards, when possible.  The partner projects will maintain their
+standards, when possible.  The partner software projects will
+maintain their
 independent organization frameworks and have ownership of the
 software they are developing and deploying utilizing the common
 standards.  The HSC will publish the code that complies with the
 standards and organize peer-reviews for the software that is developed
-under its process and guidelines.  More specifically, the scope of
-the HSC work will be to
+under its process and guidelines.  Specific examples of HSC activities
+could include:
 \begin{itemize}
-\item provide technical expertise in architecture and design issues,
-\item propose standards for component interfaces and layout, to
+\item sharing technical expertise in architecture and design issues,
+\item the development of standards for component interfaces and layout, to
 enable independent development and easy component integration,
-\item facilitate the development of non-domain specific components
-(geometry representation, data representation, …) that can be used
+\item facilitating the development of non-domain specific components
+(geometry representation, data representation, ???) that can be used
 by many projects,
-\item develop standards and guidelines for testing releasing and
+\item developing standards and guidelines for testing releasing and
 documenting software,
-\item propose solutions for distributed collaborative environment
+\item proposing solutions for distributed collaborative environment
 and common infrastructure such as build tools, testing and validation
-suites, and
-\item publish a list of recommended software products that follow HSC
-architectural and engineering recommendations.
+suites,
+\item maintaining a list of HEP software products, and
+\item providing information as to whether the software packagws follow
+architectural and engineering recommendations developed in the HSC.
 \end{itemize}
 
-In order for this program of work to be successful, the Consortium
-will adopt an “open-source” software model and rely on agile
-development methods.  The organization framework of the Consortium
-will include Technical Domain Forums each with responsibility in a
-technical domain such as simulation, analytics, frameworks, and
-crosscutting R\&D activities (the concurrency forum is a good example).
-The Forums will facilitate the organization of workshops and meetings,
-document and distribute the findings (wikis, blogs, etc).   
+Note that the initiative (and buy-in) for these activities
+must come from motivated
+individuals, software projects, institutions and/or experiments within
+the HSC. It is not intended to be a ``top-down'' process driven
+entirely by the chair of one or another governance entity, but
+a steuctured community process. In order for this program of work
+to be successful, the Consortium will also adopt an ``open-source''
+software model and rely on agile development methods.  
+
+%The organization framework of the Consortium
+%will include Technical Domain Forums each with responsibility in a
+%technical domain such as simulation, analytics, frameworks, and
+%crosscutting R\&D activities (the concurrency forum is a good example).
+%The Forums will facilitate the organization of workshops and meetings,
+%document and distribute the findings (wikis, blogs, etc).   
 
 
 \section{Governance}
 \label{sec:governance}
 
-Advisory Board: consists of representatives from the user community
-(HEP experiments, non-HEP in future) and projects, and software
-industry experts.  The role of the Advisory Board is to provide feedback
-and recommendations on scientific and technical priorities and needs.  The membership of the
-Board is solicited by the Consortium Council.
+>From the discussions at the workshop at CERN on 3-4 April, 2014, it
+is clear that the community in general prefers a lightweight
+organization, whose successes will be driven in a ``bottoms-up''
+fashion. Indeed fostering a software ecosystem is a different
+type of activity from a detector construction project or a traditional
+HEP experimental collaboration. We describe here the functional
+entities of such a lightweight ``governance'' that would provide
+the basic mechanisms for the consortium to achieve the overall
+aim of fostering the development of a high quality,
+innovative, efficient and sustainable software ecosystem of general
+utility for the HEP community.
 
-
-Software Engineering Board: consistes of software experts with expertise covering
-all project domain areas. The participating experiments and partner
-projects contribute the members of this board.  The members of the Board elect a fixed term chair to moderate discussions and foster concensus. The Board provides expertise
-and advise on software architecture and engineering issues, organizes and contributes to
-peer-reviews, discusses and proposes best practices and provides guidelines.
+{\bf Software Engineering Board (SEB):} The activities of the SEB provide the primary ``software ecosystem'' functionality of the Consortium.  
+The SEB provides expertise and advise on software architecture and engineering issues, organizes and contributes to peer-reviews,
+discusses and proposes best practices and develops guidelines.
 The members of the board play a leading role in the activities of
-the Technical Domain Forums by organizing and chairing the Forum discussions and meetings, and  discussing the outcome
-of the Forum activities at the Board meetings.  Essentially, the activities of the Board provide the "ecosystem" functionality of the Consortium.  
+the Technical Domain Forums (described below) by organizing and chairing the Forum discussions and meetings, and discussing the outcome
+of the Forum activities at the Board meetings. In essence, it should 
+play a role similar to the LHC ``Architects Forum'', with clearer
+mechanisms for interacting with major stakeholders (Consortium Council
+below).
+The membership of this board is {\em inclusive and open}. In general each software project and/or major user group (e.g.\ experiments) simply self-identifies a representative to participate. The members of the Board elect a fixed term chair to moderate discussions and foster consensus.
+The ultimate success of the HSC should be judged on the synergies,
+initiatives and activities enabling a stronger software ecosystem
+which would not have existed in the absence of the HSC.
 
-Technical Domain Forums: provide coordination and facilitate
-communication between the participating projects and the consortium.
-Organize workshops; maintain wikis, blogs, etc.
+{\bf Technical Domain Forums:} provide coordination and facilitate
+communication between the participating projects and the consortium
+on specific topics. One such example today is the ``Concurrency Forum''.
+These could be standing forums on topics of general interest or
+temporary working groups on specific topics or initiatives.
+To achieve their goals they may organize workshops; maintain wikis,
+blogs, etc. The SEB may create new technical forums as needed and pre-existing entities effectively playing this role can simply self-identify
+to the chair of the SEB. The chair of the SEB will maintain a list
+of such forums, their scope and objectives.
 
-Consortium Council: consists of representatives of participating
-institutions, projects, and experiments; the stakeholders board.  The role of the council is to enable the work of the Software Engineering Board.  The Council holds infrequent meetings (at least once a year) to 
+{\bf Consortium Council:} The role of the council is to enable the
+work of the Software Engineering Board.
+It consists of representatives of
+institutions providing resources to the software projects
+and major experiments and/or user groups; the stakeholders board.
+(We believe that the healthiest starting point
+for the HSC is that it {\em not} have resources of its own, independent
+from these stakeholders.)
+The Council holds infrequent meetings (at least once a year) to 
 identify common areas of interest and discuss common goals and overall
-direction based on the input from the Advisory Board and the results of the activities of the Software Engineering Board.
+direction based on the input from the Advisory Board and the results of the activities of the Software Engineering Board. The Council will
+also elect a fixed term chair. 
+
+{\bf Advisory Board:} The role of the Advisory Board is to provide
+feedback and recommendations on scientific and technical priorities
+and needs to the Consortium Council. It consists of individuals from
+the HEP community at large, other scientific communities, and
+software industry experts. They are {\em not} chosen as representatives
+of particular user groups, experiments, institutions or software
+projects, but rather for their general expertise.
+Proposals for membership in the Advisory Board are solicited from the Consortium Council. The Advisory Board may be asked to perform general
+reviews, or simply provide feedback directly to the Council, depending
+on the specific needs in any given time period. 
 
 
+\section{Incentives}
+
+A recent study of software packages which have become widely used
+in HEP noted the following common characteristics:
+\begin{enumerate}
+\item A clearly defined individual(s) exists as ``Champion(s)''
+\item {\em Collaborations} between individuals, institutions or experiments are formed early to facilitate development
+\item The software is created in the context of an experiment or driven by people who are also users (``Eat your own dogfood'')
+\item Adherence to or development of useful or recognized (de-facto or documented) standards enables wider use
+%\item Spreading of packages from one project/experiment to another by migration of individuals
+\item ROOT at times served as a de-facto distribution mechanism
+\item By-product of a dedicated R\&D project into new functionalities
+\item Unique functionalities
+\item Adoption by a project after failure of internal efforts
+\end{enumerate}
 
 
 \section{Summary} 
 
 
-A HEP Software Consortium will provide the means to leverage and
-coordinate HEP ongoing software activities and facilitate the creation of an {\it ecosystem} of
-software acticities.   The proposed HSC will:
+A HEP Software Consortium will provide the a community-wide framework
+for leveraging and coordinating ongoing HEP software activities and facilitating the creation of an {\it ecosystem} of software activities.   The proposed HSC will:
 \begin{itemize}
-
+\item be based on a primarily ``bottoms-up'' structure
 \item provide the means to recognize and encourage the common aspects
 of successful projects, facilitate collaboration between partner
 projects, and facilitate adoption of successful software engineering
 practices,
-\item provide software architecture assistance and expertise,
+\item promote sharing of software architecture assistance and expertise,
 \item help coordinate exploration of new technologies and provide expertise in their implementation,
 \item and eventually enable contact with other scientific fields,
 providing access to either resources or software tools and expertise.
